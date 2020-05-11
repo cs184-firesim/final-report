@@ -97,7 +97,7 @@
             <div class="column is-half-tablet is-full-mobile">
                 <figure class="image">
                     <img src="images/raymarching.png">
-                    <figcaption>Ray Marching</figcaption>
+                    <figcaption>Ray Marching <a href="#ref-5">[5]</a></figcaption>
                 </figure>
             </div>
         </div>
@@ -109,11 +109,11 @@
             <figcaption>Components of Fire</figcaption>
         </figure>
         <p>
-            Our smoke rendering pipeline borrows exsiting literature on how to render volumetric clouds. Since clouds are comparably brighter and more misty than smoke, we multiply the end result by the smoke color for a more realistic look. In the equation below, \(d\) is the density, \(p\) is the precipitation constant (not used here), \(\theta\) is the angle between the camera ray and the sun, and \(g\) is the eccentricity that defaults to \(0.2\).
+            Our smoke rendering pipeline borrows exsiting literature <a href="href-8">[8]</a> on how to render volumetric clouds. Since clouds are comparably brighter and more misty than smoke, we multiply the end result by the smoke color for a more realistic look. In the equation below, \(d\) is the density, \(p\) is the precipitation constant (not used here), \(\theta\) is the angle between the camera ray and the sun, and \(g\) is the eccentricity that defaults to \(0.2\).
         </p>
         <figure class="image has-text-centered">
             <img src="images/smoke-rendering.png">
-            <figcaption>Equation for Rendering Smoke</figcaption>
+            <figcaption>Equation for Rendering Smoke <a href="#ref-8">[8]</a></figcaption>
         </figure>
         <h3 class="subtitle">Special Effects</h3>
         <p>
@@ -135,6 +135,8 @@
         <p>
             We experimented our simulation and rendering procedure on an NVIDIA RTX 2060 graphics card and achieved real-time (60+ fps) results. We set our voxel grid size to 128*128*128. For our GPU kernels, we used 16*16*16 GPU blocks, each containing 512 threads.
             <br><br>
+            For a view of our full simulation and rendering results, we have put together a demo video below:
+            <br><br>
             TODO: Add video
         </p>
         </div>
@@ -152,9 +154,16 @@
     <section class="section no-top-padding">
         <div class="container">
         <h1 class="title">References</h1>
-        <p>
-            TODO
-        </p>
+        <p id='ref-1'>1. Understanding Perlin Noise. <i>Adrian’s Soapbox.</i> <a href="https://flafla2.github.io/2014/08/09/perlinnoise.html">[link]</a></p>
+        <p id='ref-2'>2. Real-Time Simulation and Rendering of 3D Fluids, Keenan Crane, Ignacio Llamas, Sarah Tariq. <a href="https://www.cs.cmu.edu/~kmcrane/Projects/GPUFluid/paper.pdf">[link]</a></p>
+        <p id='ref-3'>3. Fast Fluid Dynamics Simulation on the GPU, Mark J. Harris. GPU Gems, Chapter 38. <i>University of North Carolina at Chapel Hill.</i> <a href="https://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html">[link]</a></p>
+        <p id='ref-4'>4. Smoke Simulator. Rachel Bhadra, Jonathan Ngan, Kenneth Tsai. <a href="https://rachelbhadra.github.io/smoke_simulator/index.html">[link]</a></p>
+        <p id='ref-5'>5. Creating a Volumetric Ray Marcher. Ryan Brucks. <i>Shader Bits.</i> <a href="https://shaderbits.com/blog/creating-volumetric-ray-marcher">[link]</a></p>
+        <p id='ref-6'>6. Fluids-2D. Mattias Harrysson. <a href="https://github.com/mharrys/fluids-2d">[link]</a></p>
+        <p id='ref-7'>7. GPU-GEMS-3D-Fluid-Simulation. Justin Scrawk. <a href="https://github.com/Scrawk/GPU-GEMS-3D-Fluid-Simulation">[link]</a></p>
+        <p id='ref-8'>8. Real-time Volumetric Cloudscapes. Andrew Schneider. <i>GPU Pro 7</i>. <a href="https://www.amazon.com/GPU-Pro-Advanced-Rendering-Techniques-ebook/dp/B01DBMSN1Q/ref=sr_1_2?dchild=1&keywords=gpu+pro+7&qid=1589209443&sr=8-2">[link]</a></p>
+        <p id='ref-9'>9. Clouds. Sebastian Lague. <a href="https://github.com/SebLague/Clouds">[link]</a></p>
+        <p id='ref-10'> 10. Unity Shader Graph - Fire Flames Shader Tutorial. Gabriel Aguiar Prod. <a href="https://www.youtube.com/watch?v=glSsaRpHKos">[link]</a></p>
         </div>
     </section>
     <section class="section no-top-padding">
