@@ -109,7 +109,7 @@
             <figcaption>Components of Fire</figcaption>
         </figure>
         <p>
-            Our smoke rendering pipeline borrows exsiting literature <a href="href-8">[8]</a> on how to render volumetric clouds. Since clouds are comparably brighter and more misty than smoke, we multiply the end result by the smoke color for a more realistic look. In the equation below, \(d\) is the density, \(p\) is the precipitation constant (not used here), \(\theta\) is the angle between the camera ray and the sun, and \(g\) is the eccentricity that defaults to \(0.2\).
+            Our smoke rendering pipeline borrows exsiting literature <a href="#href-8">[8]</a> on how to render volumetric clouds. Since clouds are comparably brighter and more misty than smoke, we multiply the end result by the smoke color for a more realistic look. In the equation below, \(d\) is the density, \(p\) is the precipitation constant (not used here), \(\theta\) is the angle between the camera ray and the sun, and \(g\) is the eccentricity that defaults to \(0.2\).
         </p>
         <figure class="image has-text-centered">
             <img src="images/smoke-rendering.png">
@@ -164,6 +164,18 @@
         <p id='ref-8'>8. Real-time Volumetric Cloudscapes. Andrew Schneider. <i>GPU Pro 7</i>. <a href="https://www.amazon.com/GPU-Pro-Advanced-Rendering-Techniques-ebook/dp/B01DBMSN1Q/ref=sr_1_2?dchild=1&keywords=gpu+pro+7&qid=1589209443&sr=8-2">[link]</a></p>
         <p id='ref-9'>9. Clouds. Sebastian Lague. <a href="https://github.com/SebLague/Clouds">[link]</a></p>
         <p id='ref-10'> 10. Unity Shader Graph - Fire Flames Shader Tutorial. Gabriel Aguiar Prod. <a href="https://www.youtube.com/watch?v=glSsaRpHKos">[link]</a></p>
+        </div>
+    </section>
+    <section class="section no-top-padding">
+        <div class="container">
+        <h1 class="title">Acknowledgements</h1>
+        <p>
+            For 2D fire simulation & rendering, we adapted from <a href="#ref-10">[10]</a>.
+            <br>
+            For 3D fire simulation, we referred to the 2D smoke simulation pipeline in <a href="#ref-4">[4]</a>, the 2D fire documentation in <a href="#ref-3">[3]</a>, and the 3D voxel simulation architecture in <a href="#ref-2">[2]</a>.
+            <br>
+            For ray marching, we referred to the excellent example written by Sebastian Lague <a href="#ref-9">[9]</a>.
+        </p>
         </div>
     </section>
     <section class="section no-top-padding">
